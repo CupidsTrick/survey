@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Survey</title>
+</head>
+
+<body>
+  <header class="container">
+    <h1 id="title">
+      What lead you to Paris?
+    </h1>
+    <p id="description">A small questionnaire</p>
+  </header>
+  <main class="container">
+
+    <div id="header-form">
+      <form id="survey-form">
+        <div class="grid">
+          <h4>
+            Let's start with your personal info.
+          </h4>
+          <label for="name" id="name-label">Name:</label>
+          <input required type="text" id="name" placeholder="input your name here" />
+          <label for="email" id="email-label">Email:</label>
+          <input required type="email" id="email" placeholder="input your email here" />
+          <label for="number" id="number-label">Age:</label>
+          <input required type="number" id="number" min="18" max="150" placeholder="age" />
+          <label for="number-label">How long have you been in Paris?</label>
+          <input required type="number" id="number-label" min="18" max="150" placeholder="years" />
+          <div>
+            <label for="dropdown">Gender</label><br>
+            <select id="dropdown">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+        <br>
+        <div class="grid">
+          <div class="dropdown" id="dropdown">
+            <h4>What made you go to Paris in the first place?</h4>
+            <div class="dropdown-content">
+              <label for="Vacation">Vacation</label>
+              <input type="radio" name="choice" id="Vacation" class="content-choice" value="value">
+              <label for="Work">Work</label>
+              <input type="radio" name="choice" id="Work" class="content-choice" value="value">
+              <label for="Love">Love</label>
+              <input type="radio" name="choice" id="Love" class="content-choice" value="value">
+            </div>
+          </div>
+          <div class="radio">
+            <h4>What do you like in Paris?</h4>
+            <label for="food">Food</label>
+            <input type="checkbox" name="choice" id="food" value="value">
+            <label for="people">People</label>
+            <input type="checkbox" name="choice" id="people" value="value">
+            <label for="arch">Architecture</label>
+            <input type="checkbox" name="choice" id="arch" value="value">
+          </div>
+          <br>
+          <div class="grid">
+            <textarea cols="25" rows="3"></textarea>
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </div>
+    </div>
+  </main>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

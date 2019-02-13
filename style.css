@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) fixed no-repeat;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#description {
+  text-align: center;
+}
+
+.container {
+  max-width: 95%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  justify-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #333;
+  color: #ccc;
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: contents;
+}
+
+.ar1 {
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.ar2 {
+  float: right;
+  margin-left: 0.5rem;
+}
+
+#submit {
+  border: 1px solid #333;
+  color: #ccc;
+  background: #333;
+  margin: 1rem;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+}
+
+#submit:hover {
+  color: #fff;
+  background: #222;
+}
